@@ -1,0 +1,225 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" type="text/css" href="../css/font-awesome-4.7.0/css/font-awesome.min.css" media=" screen">
+ <link rel="stylesheet" type="text/css" href="../css/responsive.css" media=" screen">
+ <link rel="stylesheet" type="text/css" href="../css/dropdown.css" media=" screen">
+  <link rel="stylesheet" type="text/css" href="../css/style.css" media=" screen">
+  <link rel="stylesheet" type="text/css" href="../css/modalbox.css" media=" screen">
+<title>user profile</title>
+
+<style>
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.container03 {
+  padding: 0 16px;
+}
+
+.container03::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color:#295D72;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+button:hover, a:hover {
+  opacity: 0.7;
+}
+</style>
+
+
+</head>
+
+<body>
+
+<div class="header">
+  
+<h1><span class="highlight">Medicus</span> Search</h1>
+
+</div>
+
+<div class="topnav" id="myTopnav">
+
+
+
+
+<a href="#contacts">CONTACTS</a>
+<a href="aboutv.html">ABOUT</a>
+<a href="servicesv.html">SERVICES</a>
+<a href="homepage.html">HOME</a>
+<!--model for signin-->
+<div class="dropdown">
+<i onclick="myFunction()" class=" fa fa-user-o fa-2x dropbtn"></i>
+<div id="myDropdown" class="dropdown-content">
+<!-- Trigger/Open The Modal -->
+<a>LOG-OUT</a>
+<!--
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="#">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="img_avatar2.png" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container01">
+      <label><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit">Login</button>
+      <input type="checkbox" checked="checked"> Remember me
+    </div>
+
+    <div class="container01" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw"><a href="#">Forgot password?</a></span>
+    </div>
+  </form>
+</div>  <a href="#admin signin">ADMIN SIGN-IN</a>
+-->
+<a href="profile.html">PROFILE</a>
+
+</div>
+</div>
+
+
+<a href="javascript:void(0);" style="font-size:15px;" class="icon"
+onclick="myFunction()">&#9776; </a>
+
+
+</div>
+<div class="row">
+<!--profile card coding-->
+<div class="col-3" style="margin:10%">
+<h2 style="text-align:center">WELCOME USER</h2>
+
+<div class="card">
+  <img src="../images/logo-3.png" alt="user_image.jpeg" style="width:100%">
+  <div class="container03">
+    <h1>Name</h1>
+    <p class="title">STORE NAME </p>
+    <p>ADDRESS OF THE USER</p>
+    
+   <p><button>UPDATE YOUR PROFILE</button></p>
+   <p><button>UPLOAD YOUR LATEST EXCEL SHEET</button></p>
+  </div>
+</div>
+</div>
+<!--ended here-->
+<div class="col-6" style="float:right">
+<h1>Add some more  information </h1>
+<form action="/action_page.php">
+  <div class="container">
+    <label><b>Store Name</b></label>
+    <input type="text" placeholder="store name" name="name" required>
+
+    <label><b>Owner's Name</b></label>
+    <input type="text" placeholder="Owner'sname" name="name" required>
+
+    <label><b>Address</b></label>
+<br />
+<input type="text" placeholder="Line 1" required="required"  />
+<br />
+<input type="text" placeholder="Line 2" required="required"  />
+<br />
+<input type="text" placeholder="Line 3" required="required"  />
+<br />
+
+<label><b>Pincode</b></label>
+<br />
+<input type="number" placeholder="12345" required="required" />
+
+<label><b>Contacts</b></label>
+<br />
+<input type="phone" placeholder="+91***********" required="required" /><br />
+<label><b>State</b></label>
+<br />
+<select> 
+<option>Andhra Pradesh</option>
+<option>Arunachal Pradesh</option>
+<option>Assam</option>
+<option>Bihar</option>
+<option>Chhattisgarh</option>
+<option>Goa</option>
+<option>Gujarat</option>
+<option>Haryana</option>
+<option>Himachal Pradesh</option>
+<option>Jammu and Kashmir</option>
+<option>Jharkhand</option>
+<option>Karnataka</option>
+<option>Kerala</option>
+<option>Madhya Pradesh</option>
+<option>Maharashtra</option>
+<option>Manipur </option>
+<option>Meghalaya</option>
+<option>Mizoram</option>
+<option>Nagaland</option>
+<option>Odisha</option>
+<option>Punjab</option>
+<option>Rajasthan</option>
+<option>Sikkim</option>
+<option>Tamil Nadu</option>
+<option>Telangana</option>
+<option>Tripura</option>
+<option>Uttar Pradesh</option>
+<option>Uttarakhand</option>
+<option>West Bengal</option>
+
+</select><br />
+    <input type="checkbox" checked="checked"> Remember me
+    <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+
+    <div class="clearfix">
+    
+      <button type="submit" class="signupbtn">UPDATE</button>
+    </div>
+  </div>
+</form>
+</div>
+</div>
+
+
+
+<div class="footer">
+<h3>medicus@2017</h3>
+</div>
+<script src="../javascript/myScript.js">
+</script>
+
+
+</body>
+</html>

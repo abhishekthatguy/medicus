@@ -1,0 +1,108 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>log-in page</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" type="text/css" href="../css/font-awesome-4.7.0/css/font-awesome.min.css" media=" screen">
+ <link rel="stylesheet" type="text/css" href="../css/responsive.css" media=" screen">
+ <link rel="stylesheet" type="text/css" href="../css/dropdown.css" media=" screen">
+  <link rel="stylesheet" type="text/css" href="../css/style.css" media=" screen">
+  <link rel="stylesheet" type="text/css" href="../css/modalbox.css" media=" screen">
+
+</head>
+
+<body>
+<div class="header">
+  
+<h1><span class="highlight">Medicus</span> Search</h1>
+
+</div>
+
+<div class="topnav" id="myTopnav">
+
+
+
+
+<a href="#contacts">CONTACTS</a>
+<a href="aboutv.html">ABOUT</a>
+<a href="servicesv.html">SERVICES</a>
+<a href="homepage.html">HOME</a>
+<!--model for signin-->
+<div class="dropdown">
+<i onclick="myFunction()" class=" fa fa-user-o fa-2x dropbtn"></i>
+<div id="myDropdown" class="dropdown-content">
+
+<a href="loginpage.html">LOG-IN</a>
+
+<a href="signup1.html">REGISTER</a>
+<a href="#admin signin">ADMIN SIGN-IN</a>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="col-5" style="margin:0; padding:0;">
+<img src="../images/div.png" width="100%" height="inherit" />
+</div>
+<div class="col-6" style="float:right" >
+ <form action="#">
+    <div class="container01">
+      <label><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit">Login</button>
+      <input type="checkbox" checked="checked"> Remember me
+      <br />
+      <p>
+    Forget your password?
+     <a onclick="document.getElementById('id01').style.display='block'"><b>Click Here</b></a>
+
+<div id="id01" class="modal">
+<div class="modal-content">
+ 
+  <form  action="#">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="img_avatar2.png" alt="Avatar" class="avatar">
+    </div>
+    
+<h1><b>Forget your password ?</b></h1>
+<p> Please enter your email address register on your account</p>
+ 
+    <div class="container">
+      <label><b>Email</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>        
+      <button type="submit" onclick="alert('Your PASSWORD has been sent to your E-mail address! Check your E-mail Address to reset your PASSWORD')"> Reset</button>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw"><p>Back to <a href="Loginpage.html"><b>Login</b></a> page</p></span>
+    </div>
+  </form>
+</div>
+</div>
+</p>
+
+<br />
+      Need<a href="#">Help</a>?</p>
+    </div>
+  </form>
+</div>
+
+</div>
+
+</div>
+<div class="footer">
+<h3>medicus@2017</h3>
+</div>
+<script src="../javascript/myScript.js">
+</script>
+
+
+</body>
+</html>
